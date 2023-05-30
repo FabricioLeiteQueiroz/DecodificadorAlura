@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8">
+		<title>Decodificador Alura</title>
+		<script src="decodificador.js"></script>
+		<link rel="stylesheet" href="estilos.css">
+		<link rel="stylesheet" href="reset.css">
+		<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">	
+	</head>
+	<body>
+		<img src="logoAlura.png" id="logoAlura">
+	
+		<textarea col="50" rows="10" type="text" id="texto" placeholder="Digite seu texto"></textarea>
+
+		<div id="alerta">
+			<img id="exclAlerta" src="exclamação.png">
+			<p id="mensgAlerta">Apenas letras minúscular e sem acento.<p>
+		</div>
+		
+		<div id="botoes">
+			<button onclick="criptografa(), edita()" id="criptografa">Criptografar</button>
+			<button onclick="descriptografa(), edita()" id="descriptografa">Descriptografar</button>
+		</div>
+		
+		<div id="saida">
+			<output id="textoSaida"></output>
+			<button onclick="copia()" id="copia">Copiar</button>
+			<object data="semTexto.svg" id="semTexto"></object>
+			<p style="font-weight: 700" id="nenhuma"><br>Nenhuma mensagem encontrada</p>
+			<p style="font-weight: 400" id="digite" ><br>Digite um texto que você deseja criptografar ou descriptografar.</p>
+		</div>
+		
+		<script>
+		
+			var largura = window.innerWidth;
+					
+			if (document.getElementById("texto").value=="")	{
+				document.getElementById("textoSaida").style.visibility="hidden";
+				document.getElementById("copia").style.visibility="hidden";
+				if (largura > 992) {
+					document.getElementById("semTexto").style.visibility="visible";
+				}
+				document.getElementById("nenhuma").style.visibility="visible";
+				document.getElementById("digite").style.visibility="visible";
+			}
+			
+			else if (document.getElementById("texto").value!="") {
+				document.getElementById("semTexto").style.visibility="hidden";
+				document.getElementById("semTexto").style.visibility="hidden";
+				document.getElementById("nenhuma").style.visibility="hidden";
+				document.getElementById("digite").style.visibility="hidden";
+				document.getElementById("textoSaida").style.visibility="visible";
+				document.getElementById("copia").style.visibility="visible";
+			}
+			
+		</script>
+		
+		<div id="espaco">
+
+		</div>
+		
+	</body>
+</html>

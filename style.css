@@ -1,0 +1,12 @@
+﻿.enviar {
+	width:40%;
+	padding: 15px 0;
+	background: blue;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 10px;
+	transition: 1s all;
+	cursor: pointer;
+}

@@ -1,0 +1,461 @@
+﻿@font-face {
+  font-family: inter;
+  src: url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+}
+
+body {
+	background-color: #F3F5FC;
+	font-family: Inter;
+	font-weight: 400;
+}
+
+/*Desktop 992*/
+@media only screen and (min-width: 992px) {
+	#logoAlura {
+		width: 2vw;
+		height: auto;
+	}
+	
+	#texto {
+		font-size: 15px;
+		width: 47.5vw;
+		height: 60vh;
+		left: 16vw;
+	}
+	
+	#alerta {
+		display: inline-block;
+		position: absolute;
+		left: 16vw;
+		bottom: 18vh;
+		width: 280px;
+	}
+	
+	#exclAlerta {
+		width: 1.1vw;
+		height: auto;
+		float: left;
+
+	}
+	
+	#mensgAlerta {
+		float: right;
+		color: #0A3871;
+	}
+	
+	#botoes {
+		width: 48vw;
+		height: 40px;
+		position: absolute;
+		left: 16vw;
+		bottom: 9vh;
+	}
+	
+	#criptografa {
+		width: 23vw;
+		border-radius: 1em;
+	}
+	
+	#descriptografa {
+		width: 23vw;
+		border-radius: 1em;
+	}
+	
+	#saida {
+		position: absolute;
+		top: 3vh;
+		right: 3vw;
+		width: 28vw;
+		height: 92vh;
+		border-radius: 1em;
+		box-shadow: 0 10px 10px 1px #D8D8D8;
+	}
+	
+	#nenhuma {
+		top: 52vh;
+		width: 28vw;
+		font-size: 1.9vw;
+	}
+	
+	#digite {
+		top: 69%;
+		left: 3vw;
+		width: 22vw;
+		font-size: 1.2vw;
+		line-height: 110%;
+	}
+	
+	#espaco {
+		top: 98vh;
+	}
+}
+
+/*Tablet*/
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+	#logoAlura {
+		width: 3vw;
+		height: auto;
+	}
+	
+	#texto {
+		left: 5vw;
+		width: 89vw;
+		height: 45vh;
+		font-size: 25px;
+	}
+	
+	#alerta {
+		display: inline-block;
+		position: absolute;
+		left: 9.5vw;
+		bottom: 32vh;
+		width: 195px;
+	}
+	
+	#exclAlerta {
+		width: 1.8vw;
+		height: auto;
+		float: left;
+
+	}
+	
+	#mensgAlerta {
+		float: right;
+		font-size: 11px;
+		color: #0A3871;
+	}
+	
+	#botoes {
+		width: 80vw;
+		height: 40px;
+		position: absolute;
+		left: 10vw;
+		bottom: 22vh;
+	}
+	
+	#criptografa {
+		width: 37vw;
+		border-radius: 1.5em;
+		font-size: 10px;
+	}
+
+	#descriptografa {
+		width: 37vw;
+		border-radius: 1.5em;
+		font-size: 10px;
+	}
+
+	#semTexto {
+		visibility: hidden;
+	}
+	
+	#saida {
+		left: 5.5vw;
+		top: 85vh;
+		width: 89vw;
+		height: 105px;
+		border-radius: 1.5em;
+		line-height: 150%;
+		box-shadow: 0 10px 10px 1px #D8D8D8;
+	}
+		
+	#nenhuma {
+		top: 1vh;
+		font-size: 2.8vh;
+		left: 15vw;
+		width: 52vw;
+	}
+	
+	#digite {
+		width: 64vw;
+		font-size: 2.3vh;
+		left: 13vw;
+		top: 6vh;
+	}
+	
+	#espaco {
+		top: 105vh;
+	}
+}
+
+/*Smartphones*/
+@media only screen and (max-width: 600px) {
+	#logoAlura {
+		width: 2.5vw;
+		height: auto;
+	}
+	
+	#texto {
+		left: 5vw;
+		width: 89vw;
+		height: 45vh;
+		font-size: 25px;
+	}
+	
+	#alerta {
+		display: inline-block;
+		position: absolute;
+		left: 5vw;
+		bottom: 32vh;
+		width: 38vw;
+	}
+	
+	#exclAlerta {
+		width: 1.9vw;
+		height: auto;
+		float: left;
+
+	}
+	
+	#mensgAlerta {
+		float: right;
+		font-size: 11px;
+		color: #0A3871;
+	}
+	
+	#botoes {
+		width: 90vw;
+		height: 40px;
+		position: absolute;
+		left: 5vw;
+		bottom: 22vh;
+	}
+	
+	#criptografa {
+		position: inherit;
+		width: 90vw;
+		height: 5vh;
+		border-radius: 1.5em;
+		font-size: 10px;
+	}
+
+	#descriptografa {
+		position: inherit;
+		top: 10vh;
+		width: 90vw;
+		height: 40px;
+		border-radius: 1.5em;
+		font-size: 10px;
+	}
+
+	#semTexto {
+		visibility: hidden;
+	}
+	
+	#saida {
+		left: 10.5vw;
+		top: 95vh;
+		width: 79vw;
+		height: 90px;
+		border-radius: 1.5em;
+		line-height: 125%;
+		box-shadow: 0 10px 10px 1px #D8D8D8;
+	}
+		
+	#nenhuma {
+		top: 1vh;
+		font-size: 2vh;
+		left: 27vw;
+		width: 25vw;
+		line-height: 120%;
+	}
+	
+	#digite {
+		width: 29vw;
+		font-size: 1.5vh;
+		left: 25vw;
+		top: 8vh;
+		line-height: 120%;
+	}
+	
+	#espaco {
+		top: 112vh;
+	}
+}
+
+#logoAlura {
+	position: absolute;
+	left: 5vw;
+	top: 3vh;
+}
+
+#texto {
+	/*posição*/
+	position: absolute;
+	top: 16vh;
+	
+	/*posição e preenchimento*/
+	border: none;
+	outline: 0;
+	background-color: #F3F5FC;
+	
+	/*texto*/
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%;
+	color: #0A3871;
+
+}
+
+#texto::placeholder {
+	color: #0A3871;
+}
+
+#texto::-webkit-scrollbar {
+	width: 0px;
+	background-color: none;
+}
+
+#texto::-webkit-resizer {
+	width: 0px;
+	background-color: none;
+}
+
+#criptografa {
+	/* posição */
+	float: left;
+	
+	/* forma e preenchimento*/
+	padding: 1vw;
+	height: 100%;
+	border: 0.1em solid #0A3871;
+	background-color: #D8DFE8;
+	
+	/* texto */
+	font-family: Inter;
+	text-align: center;
+	color: #0A3871;
+}
+
+#criptografa:hover {
+	background-color: #0A3871;
+	color: White;
+}
+
+#descriptografa {
+	/* posição */
+	float: right;
+	
+	/* forma e preenchimento*/
+	padding: 1vw;
+	height: 100%;
+	min-height: 40px;
+	border: 0.1em solid #0A3871;
+	background-color: #D8DFE8;
+	
+	/* texto */
+	font-family: Inter;
+	text-align: center;
+	color: #0A3871;
+}
+
+#descriptografa:hover {
+	background-color: #0A3871;
+	color: White;
+}
+
+#saida {
+	position: absolute;
+	background-color: white;
+	border: 0.1em solid White;
+}
+
+#textoSaida {
+	width: 90%;
+	height: 81%;
+	display: block;
+	position: inherit;
+	top: 3%;
+	left: 5%;
+	background-color: white;
+	font-family: Inter;
+	color: #0A3871;
+	overflow-wrap: break-word;
+}
+
+#textoSaida {
+	overflow: scroll;
+}
+	
+#textoSaida::placeholder {
+	color: #0A3871;
+}
+
+#textoSaida::-webkit-scrollbar {
+	width: 0px;
+	background-color: none;
+}
+
+#textoSaida::-webkit-resizer {
+	width: 0px;
+	background-color: none;
+}
+
+#copia {
+	visibility: hidden;
+	
+	/* posição */
+	position: absolute;
+	bottom: 3%;
+	left: 5%;
+
+	
+	/* forma e preenchimento*/
+	padding: 2%;
+	width: 90%;
+	height: 10%;
+	min-height: 40px;
+	border: 0.1em solid #0A3871;
+	border-radius: 1em;
+	background-color: white;
+	
+	/* texto */
+	font-family: Inter;
+	text-align: center;
+	color: #0A3871;
+}
+
+#copia:hover {
+	background-color: #0A3871;
+	color: White;
+}
+
+#semTexto {
+	display: inline-block;
+	width: 18vw;
+	height: auto;
+	position: inherit;
+	bottom: 36vh;
+	left: 6vw;
+}
+
+#nenhuma {
+	position: inherit;
+	display: inline;
+	text-align: center;
+	
+	/* texto */
+	font-family: Inter;
+	text-align: center;
+	color: #0A3871;
+}
+
+#digite {
+	position: inherit;
+	display: inline;
+	text-align: center;
+
+	/* texto */
+	font-family: Inter;
+	text-align: center;
+	color: #0A3871;
+}
+
+#espaco {
+	display: inline;
+	height: 10px;
+	width: 90vw;
+	position: absolute;
+	left: 0vw;
+}
